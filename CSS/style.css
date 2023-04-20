@@ -16,3 +16,9 @@ html{
     text-align: center;
     font-size: 5rem;
 }
+
+@media(max-width: 630px) {
+  .cabecalho {
+    flex-direction: column;
+  }
+}
