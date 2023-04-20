@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Layout</title>
-    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -61,7 +61,7 @@
         </nav>
 
         <div>
-            <form action="" method="get" onsubmit="return false">
+            <form action="/Lucas" method="post" onsubmit="return false">
                 <fieldset>
                     <legend>Contato</legend>
                     <div>
@@ -71,6 +71,10 @@
                     <div>
                         <label for="idNome">Nome</label>
                         <input type="text" name="txtNome" id="idNome" required placeholder="Nome">
+                    </div>
+                    <div>
+                        <label for="idGrava"> Guardar Dados</label>
+                        <input type="checkbox" name="txtGrava" id="idGrava" required>
                     </div>
                     <div>
                         <input type="submit" value="Enviar">
