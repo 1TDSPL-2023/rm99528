@@ -1,6 +1,7 @@
 @import url("./cabecalho.css");
 @import url("./conteudo.css");
 @import url("./rodape.css");
+@import url(./break-point-630px.css);
 
 *{
   margin:0;
@@ -8,17 +9,14 @@
   box-sizing:border-box;
 }
 
-html{
+html {
     font-size: 62.7%;
 }
 
-.tit-sec{
+.tit-sec {
     text-align: center;
     font-size: 5rem;
 }
 
-@media(max-width: 630px) {
-  .cabecalho {
-    flex-direction: column;
-  }
-}
+
+
