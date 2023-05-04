@@ -1,60 +1,132 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Layout</title>
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/script.js" defer></script>
+
+    <script>
+
+        //COMENTÁRIO DE LINHA
+
+        /*
+            COMENTÁRIO DE BLOCO
+        */
+
+        //Declarando variáveis com a palavra reservada ( var )
+        // var nr1 = 10;
+        // var nr2 = 5;
+
+        //Objetos que dão saida em informações no Javascript
+
+        //console.log(parâmetro) = Demonstra a saída no console da ferramenta do desenvolvedor.
+        // console.log(nr1 + nr2);
+        
+        //document.write(parâmetro) = Demonstra a saída na página html.
+        // document.write(nr1 + nr2);
+
+        //Atrelando um evento click à um elemento no HTML.
+        //<h2 id="titulo" class="tit-sec">Seção Fotos</h2>
+        // const h2Element = document.getElementById("titulo");
+
+        // console.log(h2Element.textContent);
+
+    </script>
+
 </head>
 
 <body>
+
+    <!-- CABEÇALHO -->
+    <!-- header>img+nav>a*3[href=#]{Item-$} -->
     <header class="cabecalho">
-        <img src="./img/logo.png" alt="">
+        <img src="./img/logo.png" alt="Monitor de computador.">
         <nav>
             <a href="#">Item-1</a>
             <a href="#">Item-2</a>
             <a href="#">Item-3</a>
         </nav>
-    </header>
 
-    <h2 class="tit-sec">Seção de Fotos</h2>
-    
+    </header>
+    <!-- CABEÇALHO -->
+
+    <h2 id="titulo" class="tit-sec">Seção Fotos</h2>
+
+    <!-- <script>
+        const h2Element = document.getElementById("titulo");
+        console.log(h2Element.textContent);
+    </script> -->
+
+    <!-- CONTEÚDO -->
+    <!-- section.conteudo>div*6>img+p{Legenda} -->
     <section class="conteudo">
         <div>
-            <img src="./img/lobo1.jpg" alt="">
+            <img src="./img/lobo1.jpg" alt="Lobo">
             <p>Legenda</p>
         </div>
         <div>
-            <img src="./img/lobo2.jpg" alt="">
+            <img src="./img/lobo2.jpg" alt="Lobo">
             <p>Legenda</p>
         </div>
         <div>
-            <img src="./img/lobo3.jpg" alt="">
+            <img src="./img/lobo3.jpg" alt="Lobo">
             <p>Legenda</p>
         </div>
         <div>
-            <img src="./img/lobo4.jpg" alt="">
+            <img src="./img/lobo4.jpg" alt="Lobo">
             <p>Legenda</p>
         </div>
         <div>
-            <img src="./img/lobo4.jpg" alt="">
+            <img src="./img/lobo5.jpg" alt="Lobo">
             <p>Legenda</p>
         </div>
         <div>
-            <img src="./img/lobo5.jpg" alt="">
+            <img src="./img/lobo6.jpg" alt="Lobo">
             <p>Legenda</p>
         </div>
     </section>
+    <!-- CONTEÚDO -->
 
-    <footer class="Rodape">
+    <!-- RODAPÉ -->
+    <footer class="rodape">
         <h2>Fale Conosco</h2>
+
+        <div>
+            <form action="/gabriel" method="post" onsubmit="return true">
+                <fieldset>
+                    <legend>Contato</legend>
+                    <div>
+                        <label for="idEmail">Email</label>
+                        <input type="email" name="txtEmail" id="idEmail" required placeholder="Email">
+                    </div>
+                    <div>
+                        <label for="idPass">Senha</label>
+                        <input type="password" name="txtPass" id="idPass" required placeholder="Senha">
+                    </div>
+                    <div>
+                        <label for="idGrava">Guardar Dados</label>
+                        <input type="checkbox" name="txtGrava" id="idGrava" required>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
         <nav>
-            <a href="#">GitHub<img src="./img/social-1.png" alt="Logo GitHub"></a>
-            <a href="#">Facebook<img src="./img/social-2.png" alt="Logo Facebook"></a>
-            <a href="#">Twiter<img src="./img/social-3.png" alt="Logo Twiter"></a>
+            <a href="#"><img src="./img/social-1.png" alt="Logo github"></a>
+            <a href="#"><img src="./img/social-2.png" alt="Logo facebook"></a>
+            <a href="#"><img src="./img/social-3.png" alt="Logo twitter"></a>
         </nav>
+
     </footer>
+    <!-- RODAPÉ -->
 </body>
 
 </html>
