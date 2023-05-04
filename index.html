@@ -8,30 +8,42 @@
     <title>My Layout</title>
     <link rel="stylesheet" href="./css/style.css">
 
+    <script src="./js/script.js" defer></script>
+
     <script>
-        //comentario de linha
-        
+
+        //COMENTÁRIO DE LINHA
+
         /*
-        //comentario de bloco
+            COMENTÁRIO DE BLOCO
         */
 
-        //declarando variavel com a palavra reservada (var)
-        var nr1 = 10;
-        var nr2 = 5;
+        //Declarando variáveis com a palavra reservada ( var )
+        // var nr1 = 10;
+        // var nr2 = 5;
 
-        //Objetos que dão saida em informações no JS
+        //Objetos que dão saida em informações no Javascript
 
-        //console.log(parâmetro) = Demonstra a saida no console da ferramena do desenvolvedor.
-        console.log(nr1 + nr2);
+        //console.log(parâmetro) = Demonstra a saída no console da ferramenta do desenvolvedor.
+        // console.log(nr1 + nr2);
+        
+        //document.write(parâmetro) = Demonstra a saída na página html.
+        // document.write(nr1 + nr2);
 
-        //document.write(parâmetro) = Demonstra a saida na página html.
-        document.write(nr1 + nr2);
+        //Atrelando um evento click à um elemento no HTML.
+        //<h2 id="titulo" class="tit-sec">Seção Fotos</h2>
+        // const h2Element = document.getElementById("titulo");
+
+        // console.log(h2Element.textContent);
+
     </script>
 
 </head>
 
 <body>
 
+    <!-- CABEÇALHO -->
+    <!-- header>img+nav>a*3[href=#]{Item-$} -->
     <header class="cabecalho">
         <img src="./img/logo.png" alt="Monitor de computador.">
         <nav>
@@ -41,10 +53,17 @@
         </nav>
 
     </header>
+    <!-- CABEÇALHO -->
 
+    <h2 id="titulo" class="tit-sec">Seção Fotos</h2>
 
-    <h2 class="tit-sec">Seção Fotos</h2>
+    <!-- <script>
+        const h2Element = document.getElementById("titulo");
+        console.log(h2Element.textContent);
+    </script> -->
 
+    <!-- CONTEÚDO -->
+    <!-- section.conteudo>div*6>img+p{Legenda} -->
     <section class="conteudo">
         <div>
             <img src="./img/lobo1.jpg" alt="Lobo">
@@ -71,13 +90,14 @@
             <p>Legenda</p>
         </div>
     </section>
+    <!-- CONTEÚDO -->
 
-
+    <!-- RODAPÉ -->
     <footer class="rodape">
         <h2>Fale Conosco</h2>
 
         <div>
-            <form action="/Lucas" method="post" onsubmit="return false">
+            <form action="/gabriel" method="post" onsubmit="return true">
                 <fieldset>
                     <legend>Contato</legend>
                     <div>
@@ -85,11 +105,11 @@
                         <input type="email" name="txtEmail" id="idEmail" required placeholder="Email">
                     </div>
                     <div>
-                        <label for="idNome">Nome</label>
-                        <input type="text" name="txtNome" id="idNome" required placeholder="Nome">
+                        <label for="idPass">Senha</label>
+                        <input type="password" name="txtPass" id="idPass" required placeholder="Senha">
                     </div>
                     <div>
-                        <label for="idGrava"> Guardar Dados</label>
+                        <label for="idGrava">Guardar Dados</label>
                         <input type="checkbox" name="txtGrava" id="idGrava" required>
                     </div>
                     <div>
@@ -106,7 +126,7 @@
         </nav>
 
     </footer>
-
+    <!-- RODAPÉ -->
 </body>
 
 </html>
