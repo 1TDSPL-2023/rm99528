@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,61 +8,23 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <script src="./js/script.js" defer></script>
-
-    <script>
-
-        //COMENTÁRIO DE LINHA
-
-        /*
-            COMENTÁRIO DE BLOCO
-        */
-
-        //Declarando variáveis com a palavra reservada ( var )
-        // var nr1 = 10;
-        // var nr2 = 5;
-
-        //Objetos que dão saida em informações no Javascript
-
-        //console.log(parâmetro) = Demonstra a saída no console da ferramenta do desenvolvedor.
-        // console.log(nr1 + nr2);
-        
-        //document.write(parâmetro) = Demonstra a saída na página html.
-        // document.write(nr1 + nr2);
-
-        //Atrelando um evento click à um elemento no HTML.
-        //<h2 id="titulo" class="tit-sec">Seção Fotos</h2>
-        // const h2Element = document.getElementById("titulo");
-
-        // console.log(h2Element.textContent);
-
-    </script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-
-    <!-- CABEÇALHO -->
-    <!-- header>img+nav>a*3[href=#]{Item-$} -->
+    
     <header class="cabecalho">
-        <img src="./img/logo.png" alt="Monitor de computador.">
+        <img src="./img/logo.png" alt="Monitor de computador">
         <nav>
             <a href="#">Item-1</a>
             <a href="#">Item-2</a>
             <a href="#">Item-3</a>
         </nav>
-
     </header>
-    <!-- CABEÇALHO -->
 
-    <h2 id="titulo" class="tit-sec">Seção Fotos</h2>
+    <h2 id="titulo" class="tit-sec">Seção de Fotos</h2>
 
-    <!-- <script>
-        const h2Element = document.getElementById("titulo");
-        console.log(h2Element.textContent);
-    </script> -->
 
-    <!-- CONTEÚDO -->
-    <!-- section.conteudo>div*6>img+p{Legenda} -->
     <section class="conteudo">
         <div>
             <img src="./img/lobo1.jpg" alt="Lobo">
@@ -87,46 +48,48 @@
         </div>
         <div>
             <img src="./img/lobo6.jpg" alt="Lobo">
-            <p>Legenda</p>
+            <p>Legenda.</p>
         </div>
     </section>
-    <!-- CONTEÚDO -->
 
-    <!-- RODAPÉ -->
     <footer class="rodape">
-        <h2>Fale Conosco</h2>
+        <h2>Fale Conosco.</h2>
+        <form action="index.html" method="GET" onsubmit="return false">
+            <fieldset>
+                <legend>Entrar</legend>
+                <div>
+                    <label for="idEmail">Email</label>
+                    <input type="email" name="txtEmail" id="idEmail" placeholder="Email">
+                </div>
 
-        <div>
-            <form action="/gabriel" method="post" onsubmit="return true">
-                <fieldset>
-                    <legend>Contato</legend>
-                    <div>
-                        <label for="idEmail">Email</label>
-                        <input type="email" name="txtEmail" id="idEmail" required placeholder="Email">
-                    </div>
-                    <div>
-                        <label for="idPass">Senha</label>
-                        <input type="password" name="txtPass" id="idPass" required placeholder="Senha">
-                    </div>
-                    <div>
-                        <label for="idGrava">Guardar Dados</label>
-                        <input type="checkbox" name="txtGrava" id="idGrava" required>
-                    </div>
-                    <div>
-                        <input type="submit" value="Enviar">
-                    </div>
-                </fieldset>
-            </form>
-        </div>
+                <div>
+                    <label for="idSenha">Senha</label>
+                    <input type="password" name="txtSenha" id="idSenha" placeholder="Senha">
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                </div>
+
+                <div>
+                    <label for="idGrava">Guardar Dados</label>
+                    <input type="checkbox" name="txtGrava" id="idGrava" >
+                </div>
+
+                <div>
+                    <button type="submit" id="btnSubmit">Entrar</button>
+                </div>
+
+            </fieldset>
+        </form>
+
 
         <nav>
             <a href="#"><img src="./img/social-1.png" alt="Logo github"></a>
-            <a href="#"><img src="./img/social-2.png" alt="Logo facebook"></a>
-            <a href="#"><img src="./img/social-3.png" alt="Logo twitter"></a>
+            <a href="#"><img src="./img/social-2.png" alt="Facebook"></a>
+            <a href="#"><img src="./img/social-3.png" alt="Twitter"></a>
         </nav>
 
+
+
     </footer>
-    <!-- RODAPÉ -->
 </body>
 
 </html>

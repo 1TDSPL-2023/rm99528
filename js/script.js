@@ -1,20 +1,45 @@
-//Atrelando o evento click ao elemento h2
-const h2Element = document.getElementById("titulo");
+const imgElements = [...document.querySelectorAll(".conteudo img")];
 
-h2Element.addEventListener("click", ()=>{
-    //Math função matemática...
-    //Os metódos floor, round e ceil eles arredondam os números passados.
-    //O método randon retorna um número entre 0 e 1. Ex: 0.1233.
-    let r = "";
-    let g = "";
-    let b = "";
+imgElements.forEach((img)=>{
+    img.setAttribute("style" , "width: 20%")
+});
 
-    r =  Math.round(Math.random()*255);
-    g =  Math.round(Math.random()*255);
-    b =  Math.round(Math.random()*255);
+
+const inputUser = document.querySelector("input[type = 'email']");
+
+inputUser.addEventListener("focus", ()=>{
+    inputUser.setAttribute("style", "outline-color: #ff0000")
+});
+
+inputUser.addEventListener("keyup", ()=>{
+    const lbUser = document.querySelector("label[for='idEmail']")
+    if(inputUser.value.length < 5 ){
+        lbUser.innerHTML = "<span style= 'color : #FF0000'> Email : (mínimo de 5 caracteres)</span>";
+
+        console.log(inputUser.value);
+        inputUser.setAttribute("style", "outline-color: #ff0000");
+    }
+    else{
+        console.log(inputUser.value.length)
+        lbUser.innerHTML = "<span style =  'color : #00FF00'>Email</span>";
+        inputUser.setAttribute("style" , "outline-color: #00ff00")
+    }
     
-   
-    // h2Element.setAttribute("style","color:rgb("+r+","+g+","+b+");");
-    h2Element.setAttribute("style",`color:rgb(${r},${g},${b});`);
-    h2Element.textContent = "NOVO TÍTULO";
+});
+
+//mostrar senha
+
+const eyePass = document.querySelector(".fa-eye");
+
+eyePass.addEventListener("click", ()=>{
+    const inputPass = document.querySelector("#idSenha");
+
+    //Alterar o type
+    if(inputPass.getAttribute("type") == "password"){
+        inputPass.setAttribute("type" , "text")
+        eyePass.setAttribute("class", "fa fa-eye-slash" );
+    }else{
+        eyePass.setAttribute("class", "fa fa-eye" );
+        inputPass.setAttribute("type", "password");
+    }
 });

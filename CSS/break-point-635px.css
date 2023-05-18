@@ -1,4 +1,4 @@
-@media(max-width: 630px) {
+@media(max-width: 635px) {
     .cabecalho {
       flex-direction: column;
     }
@@ -9,7 +9,7 @@
     }
   
     .cabecalho a {
-      padding: 2.5vh 0;
+      padding: 5vh 0;
       font-size: 2rem;
     }
   
